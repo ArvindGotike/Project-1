@@ -10,6 +10,7 @@ CHOICES = {1: "rock", 2: "paper", 3: "scissor"}
 def welcome():
     file_path = f"user_data/{USER_NAME.lower()}_score.txt"
     if os.path.isfile(file_path):
+        
         with open(file_path, "r") as user_file:
             file_data = user_file.read()
             if file_data != "":
